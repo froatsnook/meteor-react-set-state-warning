@@ -10,6 +10,7 @@ Test = ReactMeteor.createClass({
     },
 
     getMeteorState: function() {
+        console.log("getMeteorState");
         return Tests.findOne(this.props._id);
     },
 

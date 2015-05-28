@@ -14,7 +14,7 @@ TestList = ReactMeteor.createClass({
 
     render: function() {
         var tests = this.state.tests.map(function(test) {
-            return <Test _id={test._id} />;
+            return <Test key={test._id} _id={test._id} />;
         });
 
         return (

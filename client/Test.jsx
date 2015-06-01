@@ -6,7 +6,7 @@ Test = ReactMeteor.createClass({
     },
 
     shouldComponentUpdate: function(nextProps, nextState) {
-        return nextState._id !== this.state._id || nextState.name !== this.state.name;
+        return nextState.name !== this.state.name;
     },
 
     getMeteorState: function() {
